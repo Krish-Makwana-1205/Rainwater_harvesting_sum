@@ -15,20 +15,12 @@ int main(){
     frt = 0;
     bk = p-1;
     rnr = 0;
-    bool cb = false,cf = false;
     while(st[frt] == 0 && frt != bk){
         frt++;
     }
-    cf = true;
-    if(frt == bk){
-        ans = 0;
-        cout<<ans;
-        return 0;
-    }
     while(st[bk] == 0 && bk != frt){
-        bk++;
+        bk--;
     }
-    cb = true;
     if(frt == bk){
         ans = 0;
         cout<<ans;
