@@ -27,11 +27,11 @@ int main(){
         return 0;
     }
     rnr = frt;
-    int maxi = 0;
+    int maximum = 0;
     int c;   
     for(int i = 0; i < p; i++){
-        if(maxi < st[rnr]){
-            maxi = st[i];
+        if(maximum < st[rnr]){
+            maximum = st[i];
             c = i;
         }
     }
